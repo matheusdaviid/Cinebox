@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:600;
+        font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+header nav{
+    background-color:#f2f2f2;
+    padding: 30px 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+
+} 
+.logo{
+    text-decoration: none; /*tira a barrinha em baixo dele*/
+    color: #011c26;
+    font-weight: bold;
+    cursor: pointer;
+}
+.menu, .menu-icones{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+.menu li a, .menu-icones li a{
+    text-decoration: none;
+    color: #011c26;
+    padding: 8px;
+}
+.menu li a:hover, .menu-icones li a:hover{
+    background-color: #011c26;
+    color: white;
+}
+button.menu-oculto{
+    border: none;
+    font-size: 2rem;
+    padding: 8px;
+    color: #0b0e19;
+    background-color: inherit;
+}
+ 
+div.menu-oculto{
+    background-color: #210d26;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ 
+    width: 0px;
+    overflow-x: hidden;
+ 
+    padding-top: 60px;
+    transition: 0.5s;
+    border-radius: 0 20px 20px 0;
+ 
+ 
+}
+ 
+div.menu-oculto a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 8px 8px 32px;
+    display: block;
+    transition: 0.3s;
+    color: #d9d9d9;
+}
+ 
+div.menu-oculto button.fechar{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 2rem;
+    background-color: inherit;
+    color: #d9d9d9;
+    border: none;
+    padding: none;
+    transition: 0.3s;
+}
+.footer {
+    background-color: #210D26;
+    color: #F2F2F2;
+    padding: 15px 0;
+}
+
+.footer a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #F2F2F2;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #F2F2F2;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #F2F2F2;
+    margin-top: 20px;
+}
